@@ -1,4 +1,6 @@
 ﻿using Session04Task.Abstraction;
+using Session04Task.Operator_Overloading;
+//using System.Numerics;
 
 namespace Session04Task
 {
@@ -74,6 +76,18 @@ namespace Session04Task
              *  -Can't inherit more than one abstract class
              
              */
+            #endregion
+
+            #region Video04 Operator overloading 
+            //+ - * / > < >= <= == != && || ! | & ^
+            //Operator overloading :Adding a new behavior to the operator
+            //Complex  Number :Real + Imagine
+           
+             Complex C01= new Complex() { Real=3,Imag=4};
+             Complex C02= new Complex() { Real=4,Imag=2};
+            //Complex C03 = C01 + C02;
+            Complex C03 = C01 - null;
+            Console.WriteLine(C03);
             #endregion
         }
     }
