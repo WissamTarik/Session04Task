@@ -31,11 +31,11 @@ namespace Session04Task
             #endregion
 
             #region Video02 Abstraction
-              //4.Abstract
-              //abstract:C# keyword[class-method-property]
-              //abstract class:Partial class [not fully implemented class]
-              //abstract method:metgod has no body
-              //abstract property
+            //4.Abstract
+            //abstract:C# keyword[class-method-property]
+            //abstract class:Partial class [not fully implemented class]
+            //abstract method:metgod has no body
+            //abstract property
 
             //Shape shape = new Shape();
             //NOTE:U can't create instance(object) of abstracy class 
@@ -49,6 +49,31 @@ namespace Session04Task
 
 
 
+            #endregion
+
+            #region Video03 Interface vs Abstract class
+
+            /*Interface
+             * -Is a code contract between the developer who write it and developer who 
+             *   will implement it
+             * -we can write in it Signature of property,Signature of method and fully
+             *     implemented method
+             * -Default access modifer inside it is public
+             * -can't inherit fully implemented method
+             * -Can implement more than one interface
+             * 
+             
+             */
+
+            /*Abstract class
+             * -Is a class
+             * -We can write in it methods,attributes, event,property,abstract methods
+             *  and abstract property
+             *  -Default access modifer inside it is private 
+             *  -Any fully implemented method,and property can inherit and override it
+             *  -Can't inherit more than one abstract class
+             
+             */
             #endregion
         }
     }
