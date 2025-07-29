@@ -1,6 +1,7 @@
 ﻿using Session04Task.Abstraction;
 using Session04Task.Mapping;
 using Session04Task.Operator_Overloading;
+using Session04Task.Static;
 //using System.Numerics;
 
 namespace Session04Task
@@ -119,11 +120,11 @@ namespace Session04Task
 
 
             #region Video07 User-defined casting operator
-            Complex C01 = new Complex() { Real = 3, Imag = 4 };
+            //Complex C01 = new Complex() { Real = 3, Imag = 4 };
             //string S = (string)C01;
             //Console.WriteLine(S);
-            int X =(int) C01;
-            Console.WriteLine(X);
+            //int X =(int) C01;
+            //Console.WriteLine(X);
             //Operator overloading
             //User-defined casting operator
 
@@ -131,13 +132,43 @@ namespace Session04Task
 
             //Code first ✔
             //DB first
-            User user = new User();
+            //User user = new User();
 
-            //Manual mapping
-            Userdto userdto = new Userdto() { Email = user.Email, Name = user.Name, PhoneNumber = user.PhoneNumber };
+            ////Manual mapping
+            //Userdto userdto = new Userdto() { Email = user.Email, Name = user.Name, PhoneNumber = user.PhoneNumber };
 
             //Automapper:Mapping automatic
             #endregion
+
+            #region Video08 static
+            //Static:C# keyword [attributes -methods - property- class -constructor]
+            //static attribute
+            //static method
+            //static property
+            //static class
+            //static constructor
+
+            //Utilities U01=new Utilities();
+            //Utilities U02=new Utilities();
+            //Utilities U03=new Utilities();
+            //Console.WriteLine(U01.CmToInch(254));
+            //Console.WriteLine(U02.CmToInch(254));
+            //Console.WriteLine(U03.CmToInch(254));
+
+            //Console.WriteLine(Utilities.CmToInch(254));
+            //Console.WriteLine(Utilities.CmToInch(254));
+            //Console.WriteLine(Utilities.CmToInch(254));
+            //Console.WriteLine(U01.PI);
+            //Console.WriteLine(U02.PI);
+            //Console.WriteLine(U03.PI);
+
+            //Console.WriteLine(Utilities.PI);
+            //Console.WriteLine(Utilities.PI);
+            //Console.WriteLine(Utilities.PI);
+
+            #endregion
+
+
         }
     }
 }
