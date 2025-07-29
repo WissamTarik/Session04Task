@@ -168,7 +168,11 @@ namespace Session04Task
 
             #endregion
 
-
+            #region Video09 Sealed
+            //Sealed :Is a C# keyword [class - method-property]
+            //It prevent class to inherit from it
+            //Prevent to override on method or property
+            #endregion
         }
     }
 }
