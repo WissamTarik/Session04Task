@@ -173,6 +173,12 @@ namespace Session04Task
             //It prevent class to inherit from it
             //Prevent to override on method or property
             #endregion
+
+            #region Video10 Partial
+            Employee employee = new Employee();
+            employee.Name = "Ahmed";
+            employee.Id = 10;
+            #endregion
         }
     }
 }
