@@ -23,6 +23,28 @@ namespace Session04Task.Operator_Overloading
         {
             return new Complex() {Real=left?.Real??0 - right?.Real??0,Imag=left?.Imag??0 - right?.Imag??0};
         }
+
+        //Operator overloading by Unary
+        //Must be static and public
+        public static Complex operator ++(Complex complex)
+        {
+            if(complex is not null)
+            {
+                complex.Real++;
+                return complex;
+            }
+            return new Complex();
+
+        }
+        public static  Complex operator --(Complex complex)
+        {
+            if(complex is not null)
+            {
+                complex.Real--;
+                return complex;
+            }
+            return new Complex();
+        }
         public override string ToString()
         {
             return $"{Real} + {Imag} i";

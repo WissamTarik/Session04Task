@@ -83,11 +83,22 @@ namespace Session04Task
             //Operator overloading :Adding a new behavior to the operator
             //Complex  Number :Real + Imagine
            
-             Complex C01= new Complex() { Real=3,Imag=4};
-             Complex C02= new Complex() { Real=4,Imag=2};
+             //Complex C01= new Complex() { Real=3,Imag=4};
+             //Complex C02= new Complex() { Real=4,Imag=2};
             //Complex C03 = C01 + C02;
-            Complex C03 = C01 - null;
-            Console.WriteLine(C03);
+            //Complex C03 = C01 - null;
+            //Console.WriteLine(C03);
+            #endregion
+
+
+            #region Video05 Operator overloading (Unary Operator)
+            //++ --
+            //Complex C01=new Complex() { Real=3, Imag=4};
+            //Console.WriteLine(C01);
+            //C01++;
+            //Console.WriteLine(C01);
+            //C01--;
+            //Console.WriteLine(C01);
             #endregion
         }
     }
