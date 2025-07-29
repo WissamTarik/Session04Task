@@ -82,9 +82,9 @@ namespace Session04Task
             //+ - * / > < >= <= == != && || ! | & ^
             //Operator overloading :Adding a new behavior to the operator
             //Complex  Number :Real + Imagine
-           
-             //Complex C01= new Complex() { Real=3,Imag=4};
-             //Complex C02= new Complex() { Real=4,Imag=2};
+
+            //Complex C01= new Complex() { Real=3,Imag=4};
+            //Complex C02= new Complex() { Real=4,Imag=2};
             //Complex C03 = C01 + C02;
             //Complex C03 = C01 - null;
             //Console.WriteLine(C03);
@@ -99,6 +99,21 @@ namespace Session04Task
             //Console.WriteLine(C01);
             //C01--;
             //Console.WriteLine(C01);
+            #endregion
+
+
+            #region Video06 Operator overloading comparison operator
+            //Complex C01 = new Complex() { Real = 3, Imag = 4 };
+            //Complex C02 = new Complex() { Real = 4, Imag = 2};
+            //if (C01 >= C02)
+            //{
+            //    Console.WriteLine("C01 is greater than C02");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("C01 is not greater than C02");
+            //}
+            
             #endregion
         }
     }

@@ -45,6 +45,45 @@ namespace Session04Task.Operator_Overloading
             }
             return new Complex();
         }
+        
+        //Comparison operator > < >= <= ==!=
+        //Return type must be boolean
+        public static bool operator >(Complex left,Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag > right.Imag;
+            return left.Real > right.Real;
+
+        }
+
+        public static bool operator < (Complex left,Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag < right.Imag;
+            return left.Real < right.Real;
+
+        }
+
+        public static bool operator >=(Complex left ,Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag >= right.Imag;
+            return left.Real >= right.Real;
+        }
+        public static bool operator <=(Complex left,Complex right)
+        {
+            if (left.Real == right.Real)
+                return left.Imag <= right.Imag;
+            return left.Real <= right.Real;
+        }
+        public static bool operator ==(Complex left,Complex right)
+        {
+            return left.Real == right.Real && left.Imag==right.Imag;
+        }
+        public static bool operator !=(Complex left,Complex right)
+        {
+            return left.Real != right.Real || left.Imag!=right.Imag;
+        }
         public override string ToString()
         {
             return $"{Real} + {Imag} i";
