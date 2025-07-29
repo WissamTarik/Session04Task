@@ -1,4 +1,5 @@
 ﻿using Assignment.FirstProject;
+using Assignment.SecondProject;
 
 namespace Assignment
 {
@@ -6,6 +7,7 @@ namespace Assignment
     {
         static void Main(string[] args)
         {
+            #region First project
             //Duration D1 = new Duration(1, 10, 15);
             //Console.WriteLine(D1.ToString());
             //Console.WriteLine("=======================");
@@ -46,7 +48,18 @@ namespace Assignment
             //else
             //{
             //    Console.WriteLine("D1 isn't greater than D2");
-            //}
+            //} 
+            #endregion
+
+
+            #region Second project
+            //Maths maths = new Maths();//Invalid
+            //Console.WriteLine($"Add 1 + 2 = {Maths.Add(1,2)}");
+            //Console.WriteLine($"Subtact 1 - 2 = {Maths.Subtract(1,2)}");
+            //Console.WriteLine($"Multiply 2 * 2 = {Maths.Multiply(2, 2)}");
+            //Console.WriteLine($"Divide 2  / 0 = {Maths.Divide(2, 0)}");
+            //Console.WriteLine($"Divide 2  / 4 = {Maths.Divide(2, 4)}");
+            #endregion
         }
     }
 }
