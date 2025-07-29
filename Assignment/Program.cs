@@ -1,0 +1,12 @@
+﻿using Assignment.FirstProject;
+
+namespace Assignment
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+        }
+    }
+}
