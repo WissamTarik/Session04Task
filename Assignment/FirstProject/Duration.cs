@@ -21,6 +21,22 @@ namespace Assignment.FirstProject
         {
             Seconds = seconds;
         }
-      
+        public override string ToString()
+        {
+
+            if (Hours == 0 && Minutes == 0)
+            {
+                Hours = (Seconds / 3600);
+                Minutes = (Seconds % 3600) / 60;
+                Seconds = Seconds % 60;
+            }
+            if (Hours == 0)
+            {
+                return $"Minutes :{Minutes}, Seconds :{Seconds} ";
+            }
+
+            return $" Hours: {Hours}, Minutes :{Minutes}, Seconds :{Seconds} ";
+        }
+
     }
 }
