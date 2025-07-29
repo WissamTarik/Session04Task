@@ -1,4 +1,5 @@
 ﻿using Session04Task.Abstraction;
+using Session04Task.Mapping;
 using Session04Task.Operator_Overloading;
 //using System.Numerics;
 
@@ -113,7 +114,29 @@ namespace Session04Task
             //{
             //    Console.WriteLine("C01 is not greater than C02");
             //}
-            
+
+            #endregion
+
+
+            #region Video07 User-defined casting operator
+            Complex C01 = new Complex() { Real = 3, Imag = 4 };
+            //string S = (string)C01;
+            //Console.WriteLine(S);
+            int X =(int) C01;
+            Console.WriteLine(X);
+            //Operator overloading
+            //User-defined casting operator
+
+            //Mapping :Convert from datatype to another datatype
+
+            //Code first ✔
+            //DB first
+            User user = new User();
+
+            //Manual mapping
+            Userdto userdto = new Userdto() { Email = user.Email, Name = user.Name, PhoneNumber = user.PhoneNumber };
+
+            //Automapper:Mapping automatic
             #endregion
         }
     }
